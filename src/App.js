@@ -23,11 +23,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Go to spreadsheets
         </a>
       </header>
     </div>
