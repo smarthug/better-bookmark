@@ -12,7 +12,10 @@ function App() {
     // window.open("https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit#gid=566299657")
     // window.location.replace("https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit#gid=566299657")
     
-    window.location.replace("https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit?usp=sharing")
+    // window.location.replace("https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit?usp=sharing")
+
+
+    document.getElementById("thelink").click();
   }, []);
   return (
     <div className="App">
@@ -22,6 +25,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
+          id="thelink"
           className="App-link"
           href="https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit?usp=sharing"
           target="_blank"
