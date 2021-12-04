@@ -9,7 +9,7 @@ function App() {
     // window.open("https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit#gid=566299657")
     // window.location.replace("https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit#gid=566299657")
     // window.location.replace("https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit?usp=sharing")
-    // document.getElementById("thelink").click();
+    document.getElementById("what").click();
   }, []);
 
   function test() {
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={test}>TEST</button>
+        <button id="what" onClick={test}>TEST</button>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
