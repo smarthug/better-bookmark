@@ -13,9 +13,12 @@ function App() {
 
     // setTimeout(test, 1000)
     let link = document.getElementById("thelink");
-    let event = document.createEvent("HTMLEvents");
+    console.log(link)
+    // link.click()
+    let event = document.createEvent("UIEvent");
+    console.log(event)
 
-    event.initEvent("click", true, true);
+    event.initEvent("touchend", true, true);
     link.dispatchEvent(event);
   }, []);
 
@@ -32,7 +35,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
+        {/* <a
           id="thelink"
           className="App-link"
           href="https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit?usp=sharing"
@@ -40,7 +43,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Go to spreadsheets
-        </a>
+        </a> */}
       </header>
     </div>
   );
