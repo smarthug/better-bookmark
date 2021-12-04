@@ -11,7 +11,12 @@ function App() {
     // window.location.replace("https://docs.google.com/spreadsheets/d/1Xk7d0O3o6inZ4JbAbQuwviIUJNSAfwfRCusjoiIGt6w/edit?usp=sharing")
     // document.getElementById("test").click();
 
-    setTimeout(test, 1000)
+    // setTimeout(test, 1000)
+    let link = document.getElementById("thelink");
+    let event = document.createEvent("HTMLEvents");
+
+    event.initEvent("click", true, true);
+    link.dispatchEvent(event);
   }, []);
 
   function test() {
@@ -21,7 +26,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <button id="what" onClick={test}>TEST</button>
+        <button id="what" onClick={test}>
+          TEST
+        </button>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
